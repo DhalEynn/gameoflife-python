@@ -52,3 +52,20 @@ Some references :
 4. Open a terminal in the virtual environnement
 5. `conda install -c numba pyculib`
 6. `conda install numba cudatoolkit pyculib`
+
+## Run the program
+
+```sh
+python game_of_life.py
+```
+* `X` are filled cases, `.` are void cases on the board.
+
+## Options
+Open game_of_life_cuda.py in a text editor. You can modify the parameters :
+* MAX_ITERATION : the maximum number of iteration before stopping, to avoid infinite loops.
+* STANDARD_BOARD : the default board of the program.
+* RANDOM_BOARD : do you want a random board.
+* SEED : the seed of the randomizer, to check the results.
+* RAND_LINES : number of lines for your random board (default to 3).
+* RAND_COLUMNS : number of columns for your random board (default to 3).
+* X_DRAW : chances to have a X in a case at start for a random board.

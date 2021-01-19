@@ -3,6 +3,7 @@ import time
 import os
 CLEAR = 'cls' if os.name == 'nt' else 'clear'
 MAX_ITERATION = 150
+STANDARD_BOARD = "......X.\nXX......\n.X...XXX"
 # If you want a random board, here are the parameters
 RANDOM_BOARD = False
 SEED = None
@@ -82,7 +83,7 @@ def boardToString(board, pad=0):
 
 
 if __name__ == "__main__":
-    f = generateBoard("......X.\nXX......\n.X...XXX")
+    f = generateBoard(STANDARD_BOARD)
     i = 1
     board = "start"
     while (i < MAX_ITERATION and board != "empty"):
